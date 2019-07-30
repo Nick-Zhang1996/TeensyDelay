@@ -22,7 +22,8 @@
 #define USE_TIMER TIMER_DEFAULT
 
 // change to a value from 0..7 to override autmatic calculation of the prescale value
-constexpr int prescaleDefault = -1;
+// Here's datasheet: https://www.pjrc.com/teensy/K64P144M120SF5RM.pdf page 962 talks about prescaler for FTM timers
+constexpr int prescaleDefault = 0b111;
 
 //==========================================================================
 // Nothing to be changed below here 
